@@ -1,0 +1,239 @@
+h1, body, p {
+	margin: 0;
+	padding: 0;
+  }
+  
+  body {
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUvJyBNC5qFd2pDykXvsOI3-CN6jDJi4A79XXKNoYMFQ&s");
+	background-color: white;
+  }
+  
+  h1 {
+  
+	margin-top: 10px;
+  
+	font-size: 48px;
+	color: white;
+	text-align: center;
+	font-family: "Baskerville", "serif";
+	
+	
+  }
+  
+  
+  
+  h2 {
+	position: relative;
+	padding: 20px 0;
+	font-size: 30px;
+	text-align: center;
+	font-family: "Baskerville", "serif";
+	color: white;
+  }
+  
+  @keyframes glitter {
+	0% {
+	  text-shadow: 0 0 10px white;
+	}
+	20% {
+	  text-shadow: 0 0 20px black;
+	}
+	40% {
+	  text-shadow: 0 0 30px white;
+	}
+	60% {
+	  text-shadow: 0 0 40px black;
+	}
+	80% {
+	  text-shadow: 0 0 50px white;
+	}
+	100% {
+	  text-shadow: 0 0 60px black;
+	}
+  }
+  h2::before,
+  h2::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	border: 10px solid transparent;
+	border-radius: 10px;
+	z-index: 1;
+	animation: glitter-border 3s infinite;
+  }
+  
+  h2::before {
+	animation-delay: 3s;
+  }
+  
+  @keyframes glitter-border {
+	0% {
+	  border-color: white;
+	}
+	20% {
+	  border-color: black;
+	}
+	40% {
+	  border-color:white;
+	}
+	60% {
+	  border-color: black;
+	}
+	80% {
+	  border-color: white;
+	}
+	100% {
+	  border-color: black;
+	}
+  }
+  .flex-container {
+	display: flex;
+	flex-wrap: wrap;
+  }
+  
+  .blogs {
+	font-family: "Baskerville", "serif";
+	font-size: 23px;
+	box-sizing: border-box;
+	flex-direction: column;
+	flex: 0 0 43%;
+	margin-right: 100px;
+	margin-left: 20px;
+  }
+  
+  .blogs img {
+	height: 200px;
+	position: relative;
+	width: 600px;
+	border: 10px solid transparent;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	z-index: 1;
+	animation: glitter-border 3s infinite;
+  }
+  
+  .blogs img::before,
+  .blogs img::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	border: 10px solid transparent;
+	border-radius: 10px;
+	animation: glitter-border 3s infinite;
+  }
+  
+  .blogs img::before {
+	animation-delay: 3s;
+  }
+  
+  @keyframes glitter-border {
+	0% {
+	  border-color: white;
+	}
+	20% {
+	  border-color: black;
+	}
+	40% {
+	  border-color: white;
+	}
+	60% {
+	  border-color: black;
+	}
+	80% {
+	  border-color: white;
+	}
+	100% {
+	  border-color: black;
+	}
+  }
+  .my-blogs {
+	font-family: "Baskerville", "serif";
+	font-weight: bolder;
+	font-size: 28px;
+	font-weight: bolder;
+	margin-bottom: 15px;
+	color: white;
+  }
+  
+  
+  
+  
+  .content {
+	font-family: "Baskerville", "serif";
+	font-family: 15px;
+	color: white; 
+  }
+  
+  .read-more-button {
+	display: inline-block;
+	color: black;
+	text-decoration: none;
+	margin-left: 150px;
+	font-family: "Baskerville", "serif";
+	margin-top: 20px;
+	margin-bottom: 15px;
+	font-size: 18px;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 10px;
+	font-weight: bolder;
+	background: linear-gradient(to right, white, aliceblue, whitesmoke, white, aliceblue, whitesmoke);
+	animation: glitter 3s infinite;
+  }
+  
+  @keyframes glitter{
+	0%{text-shadow: 0 0 10px white};
+	20%{text-shadow: 0 0 20px aliceblue};
+	40%{text-shadow: 0 0 30px whitesmoke};
+	60%{text-shadow: 0 0 40px white};
+	80%{text-shadow: 0 0 50px aliceblue};
+	100%{text-shadow: 0 0 60px whitesmoke};
+  }
+  
+  
+  
+  
+  footer {
+	width: 100%;
+	bottom: 0;
+	text-align: center;
+	position: fixed;
+	padding: 20px 0;
+	font-family: "Baskerville", "serif";
+	font-size: 12px;
+  }
+  
+  .glitter-copyright {
+	background: linear-gradient(to right, green, aqua, violet, purple, lime, red);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	animation: glitter 2s infinite;
+  }
+  
+  @keyframes glitter {
+	0% {
+	  text-shadow: 0 0 10px green;
+	}
+	20% {
+	  text-shadow: 0 0 20px aqua;
+	}
+	40% {
+	  text-shadow: 0 0 30px violet;
+	}
+	60% {
+	  text-shadow: 0 0 40px purple;
+	}
+	80% {
+	  text-shadow: 0 0 50px lime;
+	}
+	100% {
+	  text-shadow: 0 0 60px red;
+	}
+  }/*# sourceMappingURL=style.css.map */
